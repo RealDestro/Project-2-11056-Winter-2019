@@ -1,0 +1,615 @@
+<head>
+
+    /* ======================================== General ======================================== */
+
+    /* Link Settings */
+    a:link {
+        color: #4d4d4d; 
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #4d4d4d;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:any-link {
+        text-decoration: none;
+    }
+
+    /* Responsive Images */
+    .responsive-properties {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* Responsive Headers - Mobile Devices */
+    @media screen and (max-width: 600px) {
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    /* ======================================== Main Pages ======================================== */
+
+    /* Image Containers */
+    .image-container {
+        max-width: 1000px;
+        max-height: 350px;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    /* General Properties for all main images */
+    .main-image-properties {
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    /* Properties for specific images */
+    .main-image-1 {
+        object-position: 50% 0;
+    }
+
+    .main-image-2 {
+        object-position: 50% 70%;
+    }
+
+    .main-image-3 {
+        object-position: 50% 40%;
+    }
+
+    /* Small Image Containers */
+    .image-container-small {
+        max-width: 500px;
+        max-height: 175px;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+        float: right;
+    }
+
+    /* General Properties for all side images */
+    .side-image-properties {
+        max-width: 500px;
+        max-height: 175px;
+    }
+
+    /* Image Caption */
+    .image-caption {
+        color: #999999;
+        font-size: smaller;
+        font-style: italic;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: -25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Responsive Navigation Bar - Mobile Devices and Tablet */
+    @media screen and (max-width: 800px) {
+        .image-caption {
+            bottom: 0px;
+            top: -25px;
+        }
+    }
+
+    /* ==================== Specific Image Properties ==================== */
+
+    .pool-image-properties {
+        object-position: 50% 65%;
+    }
+
+    .NCPC-image-properties {
+        object-fit: cover;
+        object-position: 50% 25%;
+    }
+
+    .Menzies-College-image-properties {
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
+
+    .RobinBoyd2-image-container {
+        max-width: 500px;
+        max-height: 250px;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+        float: right;
+    }
+
+    .RobinBoyd2-image-properties {
+        max-width: 500px;
+        max-height: 250px;
+        object-fit: cover;
+        object-position: 50% 5%;
+    }
+
+    .image-5-properties {
+        object-fit: cover;
+        object-position: 50% 70%;
+    }
+    
+    .image-11-container {
+        max-width: 334px;
+        max-height: 236px;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+        float: right;
+    }
+
+    .image-11-properties {
+        max-width: 334px;
+        max-height: 236px;
+        object-fit: cover;
+    }
+
+    .image-12-properties {
+        object-fit: cover;
+        object-position: 50% 55%;
+    }
+
+    .image-13-properties {
+        object-fit: cover;
+        object-position: 50% 60%;
+    }
+
+    .image-15-properties {
+        object-fit: cover;
+        object-position: 50% 65%;
+    }
+
+    .image-16-properties {
+        object-fit: cover;
+        object-position: 50% 85%;
+    }
+
+    .image-19-container {
+        max-width: 500px;
+        max-height: 365px;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+        float: right;
+    }
+
+    .image-19-properties {
+        max-width: 500px;
+        max-height: 365px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .image-25-properties {
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    .image-30-properties {
+        object-fit: cover;
+        object-position: 0 45%;
+    }
+
+    .image-38-properties {
+        max-width: 500px;
+        max-height: 320px;
+        object-fit: cover;
+        object-position: 0 35%;
+    }
+
+    .image-38-container {
+        max-width: 500px;
+        max-height: 320px;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+        float: right;
+    }
+
+    /* ======================================== Home Page Articles ======================================== */
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        padding: 10px;
+        max-width: 33.3%;
+        max-height: 500px;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Individual Column Properties */
+    .article-1 {
+        background-color:#eaf4e6; 
+        border-right-width: 0.5px;
+    }
+
+    .article-2 {
+        background-color:#e0eadc; 
+        border-left-width: 0.5px; 
+        border-right-width: 0.5px;
+    }
+
+    .article-3 {
+        background-color:#e8ede8; 
+        border-left-width: 0.5px;
+    }
+    
+    /* Article Image Containers */
+    .article-image-container {
+        max-width: 100%;
+        max-height: 200px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Article Image Properties */
+    .article-image-properties {
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    /* Individual Article Image Properties */
+    .article-1-image {
+        object-position: 50% 0%;
+    }
+
+    .article-2-image {
+        object-position: 50% 70%;
+    }    
+
+    .article-3-image {
+        object-position: 50% 40%;
+    }
+
+    /* Responsive Articles - Mobile Devices */
+    @media screen and (max-width: 600px) {
+        .column {
+            max-width: 100%
+        }
+        .article-1 {
+            border-right-width: 1px; 
+            border-bottom-width: 0.5px
+        }
+        .article-2 {
+            border-left-width: 1px; 
+            border-right-width: 1px; 
+            border-top-width: 0.5px; 
+            border-bottom-width: 0.5px
+        }
+        .article-3 {
+            border-left-width: 1px; 
+            border-top-width: 0.5px;
+        }
+        
+        .article-image-container {
+            max-height: 200px;
+        }
+
+        .article-image-properties {
+            max-height: 200px;
+        }
+    }
+
+    /* Responsive Articles - Tablet */
+    @media screen and (min-width: 601px) and (max-width: 800px) {
+        .article-image-container {
+            height: 171px;
+        }
+
+        .article-image-properties {
+            height: 171px;
+        }
+    }
+
+    /* ======================================== Footer ======================================== */
+
+    /* Main Footer body */
+    .FooterMain {
+        background-color: #b6be9c;
+        margin-top: 0px;
+    }
+
+    /* Navigation Links in Footer */
+    .FooterNav {
+        width: 40%;
+        float: left;
+        padding-left: 10px;
+    }
+
+    .FooterNavList {
+        list-style-type: none;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    /* Basic Info in Footer */
+    .FooterInfo {
+        float: right
+        text-align: left; 
+        width: 50%;
+        margin-left: 50%;
+        padding: 10px 20px 20px 10px;
+        color: #363636;
+    }
+
+    .FooterText {
+        width: 80%;
+    }
+
+    /* Logo in Footer */
+
+    .FooterLogo {
+        padding-top: 10px;
+        margin-left: 80%;
+        width: 20%;
+    }
+
+    .logoFooter-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        float: right;
+    }
+
+    /* Copywrite Message in Footer */
+    .FooterCopywrite {
+        left: 0;
+        bottom: 0;
+        background-color: #839b77;
+        padding: 10px;   
+        text-align: right;
+        color: #363636;
+    }
+
+    /* Responsive Logo in Footer - Mobile Devices */
+    @media screen and (max-width: 600px) {
+        .logoFooter-image {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            float: right;
+        }
+        
+        .FooterNav {
+            width: 100%;
+        }
+        
+        .FooterInfo {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    /* Responsive Footer Text - Tablet*/
+    @media screen and (min-width: 601px) and (max-width: 800px) {
+        .FooterText {
+            width: 70%;
+        }
+    }
+
+    /* ======================================== Navigation Bar/Dropdown Menus ======================================== */
+    
+    /* Navigation Bar */
+    .NavBar {
+        overflow: hidden;
+        background-color: #b6be9c;
+        
+    }
+
+    /* Links inside the Navigation Bar */
+	.NavBar a {
+		float: left;
+		font-size: 16px;
+		color: #363636;
+		text-align: center;
+		text-decoration: none;
+        
+    }
+
+    .NavBar-text-padding {
+        padding: 27px 20px;
+    }
+
+    /* Background color to Navigation Bar links on hover */
+	.NavBar a:hover {
+		background-color: #eaf4e6;
+    }
+
+    /* Logo in Navigation Bar */
+    .logoNav {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 17px;
+        object-fit: cover;
+        float: left;
+    }
+
+    /* Logo inside the Navigation Bar */
+	.NavBar logo {
+		float: left;
+		padding: 15px 20px;
+    }
+
+    /* Background color to Navigation Bar logo on hover */
+	.NavBar logo:hover {
+		background-color: #eaf4e6;
+        
+    }
+
+    .NavBar-logo-padding {
+        padding: 15px 20px;
+    }
+
+    /* Responsive Navigation Bar - Mobile Devices and Tablet */
+    @media screen and (max-width: 800px) {
+        .NavBar a {
+            float: none;
+        }
+        
+        .logoNav {
+            float: none;
+            margin-bottom: 0px;
+        }
+    }
+
+    /* ======================================== Slideshow ======================================== */
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .mySlides {
+        display: none; /* Ensures that styling for container is not messy on load. Looks bad without */
+    }
+
+    img {
+        vertical-align: middle;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Slideshow container */
+    .slideshow-container-main {
+        max-width: 1000px;
+        max-height: 350px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Slideshow Image Properties */
+    .slideshow-image-properties {
+        max-width: 1000px;
+        max-height: 350px;
+        object-fit: cover;
+    }
+    
+    /* Images in Slideshow */
+    .slideshow-image-1 {
+        object-position: 50% 0;
+    }
+
+    .slideshow-image-2 {
+        object-position: 50% 70%;
+    }
+
+    .slideshow-image-3 {
+        object-position: 50% 40%;
+    }
+
+    /* ==================== Small Slideshow ==================== */
+
+    /* Slideshow container */
+    .slideshow-container-small {
+        max-width: 500px;
+        max-height: 175px;
+        position: relative;
+        margin: auto;
+        vertical-align: middle;
+        float: right;
+    }
+
+    /* Slideshow Image Properties */
+    .small-slideshow-image-properties {
+        max-width: 500px;
+        max-height: 175px;
+        object-fit: cover;
+    }
+
+    .HighCourt-image-properties {
+        object-position: 50% 40%;
+    }
+
+    /* Caption text */
+    .caption-text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    /* The dots/bullets/indicators */
+    .dot-position {
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #b6be9c;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #8d9379;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* ======================================== Other ======================================== */
+
+    body {
+        padding: 10px;
+        background-color: #e4edce;  
+        font-family: Verdana, sans-serif; margin: 0;
+        color: #363636;
+    }
+
+</head>

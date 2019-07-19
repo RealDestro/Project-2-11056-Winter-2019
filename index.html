@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--- Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--- Tab -->
+        <title>Home | Robin Boyd Churchill House</title>
+        
+        <!--- CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <!--- Navigation Bar -->
+            <nav>
+                <div class = "NavBar">
+                    <a href="index.html" class="logo">
+                        <div class = "NavBar-logo-padding">
+                            <img src ="assets/images/logotemp.png" class="logoNav" alt="Website Logo">
+                        </div>
+                    </a>
+                    <a href="robinboyd.html"><div class="NavBar-text-padding">Robin Boyd - Biography</div></a> 
+                    <a href="churchill-house-description.html"><div class="NavBar-text-padding">Churchill House - Information</div></a>
+                    <a href="churchill-house-history.html"><div class="NavBar-text-padding">Churchill House - History</div></a>
+                </div>
+            </nav>
+        </header>
+        
+        <br>
+        
+        <main>
+            <!--- Slideshow -->
+            <div class="slideshow-container-main" onloadstart="currentSlide(1)">
+                <div class="mySlides fade">
+                    <a href="robinboyd.html">
+                        <img src="assets/images/extra2-robin%20boyd%20portrait%20copyright%20Mark%20Strizic.jpg" class="slideshow-image-properties responsive-properties slideshow-image-1" alt = "Robin Boyd Portrait - Copyright Mark Strizic">
+                        <div class="caption-text">Robin Boyd</div>
+                    </a>
+                </div>
+                
+                <div class="mySlides fade">
+                    <a href="churchill-house-description.html">
+                        <img src="assets/images/extra1-churchill%20house%20by%20robin%20boyd%20photo%20copyright%20darren%20bradley.jpg" class="slideshow-image-properties responsive-properties slideshow-image-2" alt="Churchill House by Robin Boyd - Photo Copyright Darren Bradley">
+                        <div class="caption-text">Building</div>
+                    </a>
+                </div>
+                
+                <div class="mySlides fade">
+                    <a href="churchill-house-history.html">
+                        <img src="assets/images/churchill-house-1.jpg" class="slideshow-image-properties responsive-properties slideshow-image-3" alt="NCDC Plan for Northbourne Ave">
+                        <div class="caption-text">History</div>
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class = "dot-position">
+                <div class="dot" onclick="currentSlide(1)"></div> 
+                <div class="dot" onclick="currentSlide(2)"></div> 
+                <div class="dot" onclick="currentSlide(3)"></div> 
+            </div>
+            
+            <!--- Javascript -->
+            <script>
+                /* Slideshow */
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+            <br>
+
+            <!--- Content -->
+
+            <div class="row">
+                <div class="column article-1">
+                    <article>
+                        <a href="robinboyd.html">
+                            <div class="article-image-container">
+                                <img src = "assets/images/extra2-robin%20boyd%20portrait%20copyright%20Mark%20Strizic.jpg" class="article-image-properties responsive-properties article-1-image" alt = "Robin Boyd Portrait - Copyright Mark Strizic">
+                            </div>
+                        </a>
+                        <h2><a href="robinboyd.html">Robin Boyd - Biography</a></h2>
+                        <p><a href="robinboyd.html">Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds...</a></p>
+                    </article>
+                </div>
+                <div class="column article-2">
+                    <article>
+                        <a href="churchill-house-description.html">
+                            <div class="article-image-container">
+                                <img src="assets/images/extra1-churchill%20house%20by%20robin%20boyd%20photo%20copyright%20darren%20bradley.jpg" class="article-image-properties responsive-properties article-2-image" alt="Churchill House by Robin Boyd - Photo Copyright Darren Bradley">
+                            </div>
+                        </a>
+                        <h2><a href="churchill-house-description.html">Churchill House - Profile</a></h2>
+                        <p><a href="churchill-house-description.html">Churchill House was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70 and construction was completed in 1971. The building is an example of the Late Twentieth-Century...</a></p>
+                    </article>
+                </div>
+                <div class="column article-3">
+                    <article>
+                        <a href="churchill-house-history.html">
+                            <div class="article-image-container">
+                                <img src="assets/images/churchill-house-1.jpg" class="article-image-properties responsive-properties article-3-image" alt="NCDC Plan for Northbourne Ave">
+                            </div>
+                        </a>
+                        <h2><a href="churchill-house-history.html">Churchill House - History</a></h2>
+                        <p><a href="churchill-house-history.html">Churchill House was built by the Winston Churchill Memorial Trust of Australia. The Trust began consideration of erecting a building of its own in 1967 and formed a building committee in 1968. In 1969 it...</a></p>
+                    </article>
+                </div>
+            </div>
+
+            <br>
+        </main>
+        
+        <!--- Footer -->
+        <footer>
+            <div class="FooterMain">
+                <div class="FooterNav">
+                    <nav>
+                        <p><strong>Navigation</strong></p>
+                        <ul class="FooterNavList">
+                            <li><a href="index.html">Home Page</a></li>
+                            <li><a href="robinboyd.html">Robin Boyd - Biography</a></li>
+                            <li><a href="churchill-house-description.html">Churchill House - Information</a></li>
+                            <li><a href="churchill-house-history.html">Churchill House - History</a></li>
+                        </ul>  
+                    </nav>
+                </div>
+                <div class="FooterInfo">
+                    <div class="FooterLogo">
+                        <img src ="assets/images/logotemp.png" class="logoFooter-image" alt="Website Logo">
+                    </div>
+                    <div class="FooterText">
+                        <p><strong>About Us</strong></p>
+                        <p>This website serves to highlight the life, and the architectual work and style of Australian Architect, Robin Boyd.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="FooterCopywrite">
+                <p>This website was produced by students in the Faculty of Arts & Design, University of Canberra, 2019.</p>
+            </div>
+        </footer>
+    </body>
+</html>
