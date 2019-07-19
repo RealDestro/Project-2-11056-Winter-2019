@@ -28,6 +28,14 @@
     }
 
     a:any-link {
+        color: #4d4d4d; 
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a {
+        color: #4d4d4d; 
+        background-color: transparent;
         text-decoration: none;
     }
 
